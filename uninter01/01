@@ -1,0 +1,18 @@
+package Aula.Aula01;
+
+import java.util.Scanner;
+
+public class Aula01Questao01 {
+    public static void main(String[] args){
+        System.out.println("Digite o seu peso q(kg):");
+        Scanner teclado = new Scanner(System.in);
+        float peso = teclado.nextFloat();
+        System.out.println("Digite a sua altura em (metros):");
+        float altura = teclado.nextFloat();
+
+        float imc = peso/(altura*altura);
+       // float imc = (float) (peso / Math.pow(altura,2));
+        System.out.println("Seu IMC é: " + imc);
+        // System.out.printf("Seu IMC é: %.2f " + imc);
+    }
+}
