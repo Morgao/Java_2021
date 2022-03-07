@@ -1,0 +1,20 @@
+package Aula.Aula01;
+
+import java.util.Scanner;
+    
+public class Aula01Questao022 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite seu palpite:");
+		int palpite = teclado.nextInt();
+		
+		String msg;
+		while(palpite!=10000) {
+			msg = palpite<10000?"Um pouco mais...":"Um pouco menos...";
+			System.out.println(msg);
+			palpite = teclado.nextInt();
+		}
+		System.out.println("Seu palpite está correto");
+
+	}
+}
